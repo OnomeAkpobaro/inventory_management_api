@@ -128,3 +128,24 @@ http://nomzzy.pythonanywhere.com/api/inventory/alerts/<pk>/resolve_alert
 
 
 
+STORE
+
+GET:
+http://nomzzy.pythonanywhere.com/api/inventory/stores/
+
+POST:
+http://nomzzy.pythonanywhere.com/api/inventory/stores/
+input:
+{
+    "name": " ",
+    "address" = "",
+    "contact_number": "",
+    "email": ""
+    
+    
+}
+PUT:
+http://nomzzy.pythonanywhere.com/api/inventory/stores/
+
+DELETE:
+http://nomzzy.pythonanywhere.com/api/inventory/stores/
