@@ -422,7 +422,7 @@ class AlertViewSet(viewsets.ModelViewSet):
         #Custom action to mark an alert as resolved
         alert = self.get_object()
         alert.is_resolved = True
-        alert.resolved_at = timezone.now()
+        alert.resolved_at = datetime.now()
         alert.save()
         return Response(self.serializer_class(alert).data)
     
