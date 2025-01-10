@@ -70,3 +70,61 @@ http://nomzzy.pythonanywhere.com/api/store-inventory/<pk>/
 http://nomzzy.pythonanywhere.com/api/alerts/
 http://nomzzy.pythonanywhere.com/api/alerts/<pk>/
 http://nomzzy.pythonanywhere.com/api/alerts/<pk>/resolve_alert
+
+
+POSTMAN TEST:
+CATEGORY
+
+GET :
+http://nomzzy.pythonanywhere.com/api/inventory/categories/
+
+POST:
+http://nomzzy.pythonanywhere.com/api/inventory/categories/
+input: 
+{
+    "name": " ",
+    "description": " ",
+}
+
+PUT:
+http://nomzzy.pythonanywhere.com/api/inventory/categories/
+
+DELETE:
+http://nomzzy.pythonanywhere.com/api/inventory/categories/
+
+
+SUPPLIER
+
+GET:
+http://nomzzy.pythonanywhere.com/api/inventory/supplier/
+
+POST:
+http://nomzzy.pythonanywhere.com/api/inventory/supplier/
+input:
+{
+    "name": " ",
+    "contact_person": "",
+    "email": "",
+    "phone" = "",
+    "address" = "",
+}
+PUT:
+http://nomzzy.pythonanywhere.com/api/inventory/supplier/
+
+DELETE:
+http://nomzzy.pythonanywhere.com/api/inventory/supplier/
+
+
+Stock-report:
+
+GET:
+http://nomzzy.pythonanywhere.com/api/inventory/reports/stock/
+
+
+Resolve alert:
+POST:
+http://nomzzy.pythonanywhere.com/api/inventory/alerts/<pk>/resolve_alert
+
+
+
+
