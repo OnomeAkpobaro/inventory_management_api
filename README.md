@@ -40,9 +40,8 @@ Database optimization with Django ORM
 
 Authentication:
 
-POST /api/auth/login/
-POST /api/auth/register/
-POST /api/auth/logout/
+POST /api/accounts/login/
+POST /api/accounts/register/
 
 Inventory Management
 GET    /api/inventory/            # List all items
@@ -54,22 +53,23 @@ DELETE /api/inventory/{id}/       # Delete item
 
 End Points:
 
-http://nomzzy.pythonanywhere.com/api/categories/
-http://nomzzy.pythonanywhere.com/api/categories/<pk>/
-http://nomzzy.pythonanywhere.com/api/inventory-items/
-http://nomzzy.pythonanywhere.com/api/inventory-items/<pk>/
-http://nomzzy.pythonanywhere.com/api/inventory-items/<pk>/adjust_stock/
-http://nomzzy.pythonanywhere.com/api/inventory-changes/
-http://nomzzy.pythonanywhere.com/api/inventory-changes/<pk>/
-http://nomzzy.pythonanywhere.com/api/supplier/
-http://nomzzy.pythonanywhere.com/api/supplier/<pk>/
-http://nomzzy.pythonanywhere.com/api/stores/
-http://nomzzy.pythonanywhere.com/api/stores/<pk>/
-http://nomzzy.pythonanywhere.com/api/store-inventory/
-http://nomzzy.pythonanywhere.com/api/store-inventory/<pk>/
-http://nomzzy.pythonanywhere.com/api/alerts/
-http://nomzzy.pythonanywhere.com/api/alerts/<pk>/
-http://nomzzy.pythonanywhere.com/api/alerts/<pk>/resolve_alert
+http://nomzzy.pythonanywhere.com/api/inventory/categories/
+http://nomzzy.pythonanywhere.com/api/inventory/categories/<pk>/
+http://nomzzy.pythonanywhere.com/api/inventory/inventory-items/
+http://nomzzy.pythonanywhere.com/api/inventory/inventory-items/<pk>/
+http://nomzzy.pythonanywhere.com/api/inventory/inventory-items/<pk>/adjust_stock/
+http://nomzzy.pythonanywhere.com/api/inventory/inventory-changes/
+http://nomzzy.pythonanywhere.com/api/inventory/inventory-changes/<pk>/
+http://nomzzy.pythonanywhere.com/api/inventory/supplier/
+http://nomzzy.pythonanywhere.com/api/inventory/supplier/<pk>/
+http://nomzzy.pythonanywhere.com/api/inventory/stores/
+http://nomzzy.pythonanywhere.com/api/inventory/stores/<pk>/
+http://nomzzy.pythonanywhere.com/api/inventory/store-inventory/
+http://nomzzy.pythonanywhere.com/api/inventory/store-inventory/<pk>/
+http://nomzzy.pythonanywhere.com/api/inventory/alerts/
+http://nomzzy.pythonanywhere.com/api/inventory/alerts/<pk>/
+http://nomzzy.pythonanywhere.com/api/inventory/alerts/<pk>/resolve_alert/
+
 
 
 POSTMAN TEST:
@@ -123,7 +123,7 @@ http://nomzzy.pythonanywhere.com/api/inventory/reports/stock/
 
 Resolve alert:
 POST:
-http://nomzzy.pythonanywhere.com/api/inventory/alerts/<pk>/resolve_alert
+http://nomzzy.pythonanywhere.com/api/inventory/alerts/<pk>/resolve_alert/
 
 
 
