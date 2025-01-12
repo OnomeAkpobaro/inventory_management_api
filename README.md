@@ -96,10 +96,10 @@ http://nomzzy.pythonanywhere.com/api/inventory/categories/
 SUPPLIER
 
 GET:
-http://nomzzy.pythonanywhere.com/api/inventory/supplier/
+http://nomzzy.pythonanywhere.com/api/inventory/suppliers/
 
 POST:
-http://nomzzy.pythonanywhere.com/api/inventory/supplier/
+http://nomzzy.pythonanywhere.com/api/inventory/suppliers/
 input:
 {
     "name": " ",
@@ -109,10 +109,10 @@ input:
     "address" = "",
 }
 PUT:
-http://nomzzy.pythonanywhere.com/api/inventory/supplier/
+http://nomzzy.pythonanywhere.com/api/inventory/suppliers/
 
 DELETE:
-http://nomzzy.pythonanywhere.com/api/inventory/supplier/
+http://nomzzy.pythonanywhere.com/api/inventory/suppliers/
 
 
 Stock-report:
@@ -120,6 +120,9 @@ Stock-report:
 GET:
 http://nomzzy.pythonanywhere.com/api/inventory/reports/stock/
 
+Inventory Alerts:
+GET
+http://nomzzy.pythonanywhere.com/api/inventory/alerts/<pk>/
 
 Resolve alert:
 POST:
@@ -149,3 +152,18 @@ http://nomzzy.pythonanywhere.com/api/inventory/stores/
 
 DELETE:
 http://nomzzy.pythonanywhere.com/api/inventory/stores/
+
+
+
+STORE-INVENTORY
+GET
+http://nomzzy.pythonanywhere.com/api/inventory/store-inventory/
+
+POST
+http://nomzzy.pythonanywhere.com/api/inventory/store-inventory/
+{
+    "store": "1",
+    "item": "5",
+    "quantity": 400
+}
+
